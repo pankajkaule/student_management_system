@@ -1,0 +1,14 @@
+body[data-theme="light-theme"] {
+  .header {
+    background-color: green;
+    color: white;
+   
+  }
+ 
+  }
+body[data-theme="dark-theme"] {
+  .header{
+    background-color: teal;
+  }
+ 
+}

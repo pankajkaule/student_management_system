@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&family=Roboto:wght@300&display=swap');
+$roboto-slab: 'Noticia Text', serif;   
+button {
+  padding: 10px 20px;
+  letter-spacing: 2px;
+}
+
+body{
+  font-family: $roboto-slab;
+}
+
+
+body[data-theme="light-theme"] {
+  // background-color: white !important;
+  color: white;
+
+  .primary{
+    background-color: red !important;
+  }
+  .secondary{
+    background-color: green;
+  }
+  
+
+}
+
+body[data-theme="dark-theme"] {
+  background-color: black !important;
+  .primary{
+    background-color: black !important;
+  }
+  .secondary{
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+
+  }
+  color: white;
+  button {
+    background-color: white;
+    color: black;
+  }
+  section{
+    color: white;
+  }
+}
+
+body[data-theme="sea-theme"] {
+  background-color: #020617 !important;
+  color: white;
+  section{
+    color: white;
+  }
+  button {
+    background-color: white;
+    color: black;
+  }
+}
+
+body[data-theme="sharp-theme"] {
+  background-color: teal;
+  color: white;
+  section{
+    color: white;
+  }
+  button {
+    background-color: white;
+    color: black;
+  }
+}

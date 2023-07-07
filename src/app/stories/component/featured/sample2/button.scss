@@ -1,0 +1,38 @@
+body[data-theme="light-theme"] {
+  .header {
+    background-color: green;
+    color: white;
+   
+  }
+ 
+  }
+body[data-theme="dark-theme"] {
+  .header{
+    background-color: teal;
+  }
+ 
+}
+
+
+.background-image {
+  background-image: url(https://cdn.pixabay.com/photo/2019/08/06/00/46/black-and-white-4387130_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: scrollBackground 6s linear infinite;
+}
+
+// @keyframes scrollBackground {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   100% {
+//     transform: translateY(-100%);
+//   }
+// }
